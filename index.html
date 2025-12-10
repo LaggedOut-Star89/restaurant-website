@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+        /* GLOBAL */
+        body{
+            margin: 0;
+            background-color: #fdf7ef; /* soft cream background */
+            color: rgb(69, 68, 67);
+        }
+
+        .h1{
+            color:rgb(210, 164, 86);
+            text-align: center;
+            font-family:"Pirata One", system-ui;;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 50px;
+            margin-top: 25px;
+            letter-spacing: 2px;
+        }
+
+        .h2{
+            color:rgb(150, 111, 51);
+            text-align: center;
+            font-size: 27px;
+            font-family: "Protest Guerrilla", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+
+        /* NAVBAR */
+        .navbar{
+            background-color: rgb(232, 188, 114);
+            padding: 12px 10px;
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+        }
+
+        .navbar a{
+            color: rgb(96, 69, 32);
+            text-decoration: none;
+            font-family: "Alumni Sans Pinstripe", sans-serif;
+            margin: 0 35px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+
+        .navbar a:hover{
+            color: #ffffff;
+            transform: translateY(-1px);
+        }
+
+        /* ABOUT / CONTENT */
+        div.content{
+            font-size: 18px;
+            text-align: center;
+            margin: 30px auto 10px;
+            max-width: 800px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            line-height: 1.7;
+        }
+
+        div.content h3{
+            font-weight: 700;
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: rgb(150, 111, 51);
+        }
+
+        /* IMAGE */
+        div.home_image{
+            margin-top: 35px;
+            margin-bottom: 40px;
+            width: 1200px;
+            max-width: 90%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /* border radius only works for a image not for the div block*/
+        /* object fit cover is used to maintain aspect ratio while covering the entire div */
+        .home_image img{
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+        }
+
+        /* HOURS & RESERVATIONS SECTIONS */
+        section.hours-section,
+        section.reservation-section{
+            padding: 35px 25px;
+            margin: 25px auto;
+            max-width: 800px;
+            border-radius: 12px;
+            font-family: "Poppins", sans-serif;
+            color: rgb(69, 68, 67);
+            text-align: center;
+            background-color: #fdf7ef;
+            border: 1px solid rgba(210,164,86,0.35);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+        }
+
+        .section-title{
+            font-family: "League Gothic", sans-serif;
+            font-size: 26px;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            color: rgb(96, 69, 32);
+            margin-bottom: 28px;
+        }
+
+        .timings-block h2{
+            font-family: "Poppins", sans-serif;
+            font-size: 18px;
+            letter-spacing: 2px;
+            margin-bottom: 4px;
+            margin-top: 12px;
+            color: rgb(96, 69, 32);
+        }
+
+        .timings-block p{
+            font-size: 15px;
+            margin-top: 2px;
+            line-height: 1.6;
+        }
+
+        .address-block{
+            margin-top: 35px;
+            line-height: 1.7;
+            font-size: 15px;
+        }
+
+        .reservation-section p{
+            font-size: 15px;
+            line-height: 1.7;
+            margin: 8px auto;
+        }
+
+        .reservation-section a{
+            color: rgb(150, 111, 51);
+            text-decoration: underline;
+            font-weight: 500;
+        }
+
+        .reservation-section a:hover{
+            color: rgb(96, 69, 32);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h1">THE GOOD SPOON</h1>
+    <h2 class="h2">Welcome to our restaurant!</h2>
+
+    <div class="navbar">
+        <a id="index_link" href="index.html">Home</a>
+        <a id="menu_link" href="menu.html">Menu</a>
+        <a id="reservation_link" href="reservation.html">Reservation</a>
+        <a id="contact_link" href="contact_reviews.html">Contact Us</a>
+    </div>
+
+    <div class="content">
+        <h3>About Us</h3>
+        <p>
+            We THE GOOD SPOON Restaurant provide our customers the best delicacy of food!<br>
+            The menu includes some of the most recognisable cuisines around the world like
+            Italian, Chinese, Korean, Mexican, French and many more.
+        </p>
+        <p>Experience the finest dining with us. Explore our menu and make a reservation today!</p>
+        <p><i>"There's no sincere love than the love of food" ~Owner- Prem Singh</i></p>
+    </div>
+
+    <div class="home_image">
+        <img src="King+Spread.jpeg" alt="Restaurant Image">
+    </div>
+
+    <!-- HOURS & LOCATION SECTION -->
+    <section class="hours-section">
+        <h1 class="section-title">H O U R S &nbsp;&nbsp; &nbsp; L O C A T I O N</h1>
+
+        <div class="timings-block">
+            <h2>DINNER</h2>
+            <p>Seven nights a week, 5:00–10:00 p.m.</p>
+
+            <br>
+
+            <h2>LUNCH</h2>
+            <p>Friday, Saturday and Sunday, 12:00–3:00 p.m.</p>
+        </div>
+
+        <div class="address-block">
+            <p>WAKANDA</p>
+            <p>New York, NY 10014</p>
+            <p>91xxxxxxx</p>
+            <br>
+            <p><i>On the southwest street of Hogwarts Wall inside Avengers Building, next to Mr. Poppins</i></p>
+        </div>
+    </section>
+
+    <!-- RESERVATIONS SECTION -->
+    <section class="reservation-section">
+        <h1 class="section-title">R E S E R V A T I O N S</h1>
+
+        <p>Reservations open 30 days in advance and are available on our site only!</p>
+        <p>Go to <a href="contact_reviews.html">here!</a></p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<html>
+<head>
+    <title>Contact Reviews</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+ body{
+            margin: 0;
+            background-color: #fdf7ef; /* soft cream background */
+            color: rgb(69, 68, 67);
+        }
+
+        h1{
+            color:rgb(210, 164, 86);
+            text-align: center;
+            font-family:"Pirata One", system-ui;;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 48px;
+            margin-top: 25px;
+            letter-spacing: 2px;
+        }
+
+        h2{
+            color:rgb(150, 111, 51);
+            text-align: center;
+            font-size: 27px;
+            font-family: "Protest Guerrilla", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+
+        /* NAVBAR */
+        .navbar{
+            background-color: rgb(232, 188, 114);
+            padding: 12px 10px;
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+        }
+
+        .navbar a{
+            color: rgb(96, 69, 32);
+            text-decoration: none;
+            font-family: "Alumni Sans Pinstripe", sans-serif;
+            margin: 0 35px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+
+        .navbar a:hover{
+            color: #ffffff;
+            transform: translateY(-1px);
+        }
+        .contact-info{
+            font-size: 18px;
+            text-align: center;
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            width:fit-content;
+            color:rgb(96, 69, 32);
+            font-family: "Poppins", sans-serif;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid rgb(210, 164, 86);
+        }
+        .address-block{
+            font-size: 15px;
+            text-align: center;
+            margin-top: 40px;
+            color:rgb(96, 69, 32);
+            font-family: "Poppins", sans-serif;
+            margin-left: auto;
+            margin-right: auto;
+            width:fit-content;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid rgb(210, 164, 86);
+        }
+        .email, .phone{
+            font-weight: 300;   
+            margin-bottom: 5px;
+            margin-top: 15px;
+            font-family:"Protest Guerrilla", sans-serif;
+        }
+        .review-box{
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            font-family:"poppins", sans-serif;
+            align-items: center;
+
+        }
+        .review-box button{
+            width: 100px;
+            margin-top: 18px;
+            margin-left: auto;
+            margin-right: auto;
+
+            background-color: rgb(210, 164, 86);
+            color: white;
+            padding: 10px 0;
+            border: none;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .review-box button:hover{
+            background-color: rgb(245, 203, 141);
+            transform: translateY(-1px);
+        }
+        .review-box textarea{
+            width: 400px;
+            height: 120px;
+            padding: 10px;
+            border: 1px solid rgb(210, 164, 86);
+            border-radius: 8px;
+            font-size: 14px;
+            font-family: "Poppins", sans-serif;
+        }
+        .review-box select{
+            width: 150px;
+            margin-top: 15px;
+            padding: 8px;
+            border: 1px solid rgb(210, 164, 86);
+            border-radius: 6px;
+            font-size: 14px;
+            font-family: "Poppins", sans-serif;
+        }
+
+
+    </style>
+    </head>
+    <body>
+    <h1>📞Contact</h1>
+    <h2>Our Contact and Address</h2>
+    <div class="navbar">
+        <a id="index_link" href="index.html">Home</a>
+        <a id="menu_link" href="menu.html">Menu</a>
+        <a id="reservation_link" href="reservation.html">Reservation</a>
+        <a id="contact_link" href="contact_reviews.html">Contact Us</a>
+    </div>
+
+    <div class="contact-info">
+        <p class="email">EMAIL:</p>
+        <p>thegspoon34@gmail.com</p>
+        <p class="phone">PHONE:</p>
+        <p>+91 86303105032</p>
+    </div>
+    <div class="address-block">
+        <h2>Address</h2>
+        <p>123 Hogwarts Wall Street, Avengers Building, FC 45678</p>
+    </div>
+        <div class="review-box">
+            <form>
+                <h2>Leave a Review:</h2><br>
+                <label for="rreview"></label><br>
+                <textarea id="rreview" name="rreview" placeholder="Write your experience here..."></textarea><br>
+                <select name="rating" id="rating">
+                    <option value="" disabled selected>Rate us</option>
+                    <option value="5">⭐⭐⭐⭐⭐ - Excellent</option>
+                    <option value="4">⭐⭐⭐⭐ - Very Good</option>
+                    <option value="3">⭐⭐⭐ - Good</option>
+                    <option value="2">⭐⭐ - Fair</option>
+                    <option value="1">⭐ - Poor</option>
+                </select><br>
+               <button type="submit">Submit Review</button>
+            </form>
+        </div>
+    </body>
+</html>

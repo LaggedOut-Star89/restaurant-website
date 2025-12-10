@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Good Spoon | Menu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+        body{
+            margin: 0;
+            background-color: #fdf7ef;
+            color: rgb(69, 68, 67);
+            font-family: "Poppins", sans-serif;
+        }
+
+        .h1{
+            color:rgb(210, 164, 86);
+            text-align: center;
+            font-family: "Pirata One", system-ui;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 46px;
+            margin-top: 25px;
+            letter-spacing: 2px;
+        }
+
+        .h2{
+            color:rgb(150, 111, 51);
+            text-align: center;
+            font-size: 32px;
+            font-family: "Protest Guerrilla", sans-serif;
+            font-weight: 600;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+
+        /* NAVBAR (same as home) */
+        .navbar{
+            background-color: rgb(232, 188, 114);
+            padding: 12px 10px;
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+        }
+
+        .navbar a{
+            color: rgb(96, 69, 32);
+            text-decoration: none;
+            font-family: "Alumni Sans Pinstripe", sans-serif;
+            margin: 0 35px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+
+        .navbar a:hover{
+            color: #ffffff;
+            transform: translateY(-1px);
+        }
+
+        .menu-intro{
+            text-align: center;
+            max-width: 800px;
+            margin: 30px auto 10px;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        /* MENU SECTIONS */
+        .menu-section{
+            max-width: 1000px;
+            margin: 25px auto;
+            padding: 25px 20px;
+            border-radius: 12px;
+            background-color: #fdf7ef;
+            border: 1px solid rgba(210,164,86,0.35);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+        }
+
+        .menu-section h3{
+            font-family: "League Gothic", sans-serif;
+            font-size: 26px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            text-align: center;
+            color: rgb(96, 69, 32);
+            margin-bottom: 15px;
+        }
+
+        .menu-grid{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            justify-content: center;
+        }
+
+        .menu-item{
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 14px 16px;
+            flex: 1 1 260px;
+            max-width: 300px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .menu-item-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
+        }
+
+        .menu-item-name{
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        .menu-item-price{
+            font-weight: 600;
+            color: rgb(150, 111, 51);
+        }
+
+        .menu-item-desc{
+            font-size: 14px;
+            color: #555;
+            margin-top: 2px;
+        }
+
+        .menu-tag{
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 2px 6px;
+            border-radius: 10px;
+            background-color: rgba(210,164,86,0.15);
+            color: rgb(96, 69, 32);
+            margin-left: 6px;
+        }
+
+        /* Small screens */
+        @media (max-width: 600px){
+            .navbar a{
+                margin: 0 15px;
+                font-size: 18px;
+            }
+
+            .menu-section{
+                margin: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="h1">THE GOOD SPOON</h1>
+    <h2 class="h2">Our Menu</h2>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="reservation.html">Reservation</a>
+        <a href="contact_reviews.html">Contact Us</a>
+    </div>
+
+    <div class="menu-intro">
+        Discover our selection of dishes, crafted with fresh ingredients and a lot of love.
+        Choose from our starters, mains, desserts and refreshing beverages.
+    </div>
+
+    <!-- STARTERS -->
+    <section class="menu-section">
+        <h3>Starters</h3>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <span class="menu-item-name">Crispy Garlic Bread <span class="menu-tag">Veg</span></span>
+                    <span class="menu-item-price">₹180</span>
+                </div>
+                <p class="menu-item-desc">Toasted bread with garlic butter and herbs.</p>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <span class="menu-item-name">Loaded Nachos <span class="menu-tag">Veg</span></span>
+                    <span class="menu-item-price">₹240</span>
+                </div>
+                <p class="menu-item-desc">Corn chips topped with cheese sauce, beans and salsa.</p>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <span class="menu-item-name">Chicken Popcorn</span>
+                    <span class="menu-item-price">₹260</span>
+                </div>
+                <p class="menu-item-desc">Crispy bite-sized chicken pieces with spicy dip.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN COURSE -->
+    <section class="menu-section">
+        <h3>Main Course</h3>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <span class="menu-item-name">Margherita Pizza <span class="menu-tag">Veg</span></span>
+                    <span class="menu-item-price">₹420</span>
+                </div>
+                <p class="menu-item-desc">Classic pizza with tomato sauce, mozzarella and basil.</p>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <span class="menu-item-name">Peri Peri Paneer Sizzler <span class="menu-tag">Veg</span></span>
+                    <span class="menu-item-price">₹480</span>
+                </div>
+                <p class="menu-item-desc">Grilled paneer, veggies and rice served on a hot plate.</p>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <span class="menu-item-name">Grilled Chicken Steak</span>
+                    <span class="menu-item-price">₹520</span>
+                </div>
+                <p class="menu-item-desc">Juicy chicken steak with mashed potatoes and sautéed veggies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESSERTS -->
+    <section class="menu-section">
+        <h3>Desserts</h3>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <span class="menu-item-name">Chocolate Lava Cake</span>
+                    <span class="menu-item-price">₹220</span>
+                </div>
+                <p class="menu-item-desc">Warm chocolate cake with a gooey center, served with ice cream.</p>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <span class="menu-item-name">New York Cheesecake</span>
+                    <span class="menu-item-price">₹260</span>
+                </div>
+                <p class="menu-item-desc">Rich baked cheesecake with a buttery biscuit base.</p>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <span class="menu-item-name">Fruit Sundae <span class="menu-tag">Veg</span></span>
+                    <span class="menu-item-price">₹210</span>
+                </div>
+                <p class="menu-item-desc">Seasonal fruits with vanilla ice cream and nuts.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BEVERAGES -->
+    <section class="menu-section">
+        <h3>Beverages</h3>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <span class="menu-item-name">Classic Lemon Iced Tea</span>
+                    <span class="menu-item-price">₹140</span>
+                </div>
+                <p class="menu-item-desc">Refreshing iced tea with a hint of lemon.</p>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <span class="menu-item-name">Cold Coffee Frappe</span>
+                    <span class="menu-item-price">₹180</span>
+                </div>
+                <p class="menu-item-desc">Blended cold coffee with cream and chocolate drizzle.</p>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <span class="menu-item-name">Fresh Lime Soda <span class="menu-tag">Veg</span></span>
+                    <span class="menu-item-price">₹120</span>
+                </div>
+                <p class="menu-item-desc">Sweet / salted soda with fresh lime.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
